@@ -1,0 +1,2 @@
+FLASK_APP=sust_app.py
+FLASK_ENV=development
