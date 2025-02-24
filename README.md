@@ -20,7 +20,7 @@ The service is executed by running a Flask app from a virtual environment using 
 Create a Python 3.12.9 environment (e.g., `flask-mean-median`).
 
 
-`pip install -r flas_kmean_median/requirements.txt`
+`pip install -r flask_mean_median/requirements.txt`
 
 ### Docker
 
