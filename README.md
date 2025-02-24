@@ -1,4 +1,4 @@
-## Flask web service
+## Flask API
 
 This API returns mean and median values given a list of integer values.
 
@@ -15,13 +15,18 @@ Example requests and results:
 
 The service is executed by running a Flask app from a virtual environment using Docker.
 
-Postman was used to test.
+### Setup
+
+Create a Python 3.12.9 environment (e.g., `flask-mean-median`).
+
+
+`pip install -r flas_kmean_median/requirements.txt`
 
 ### Docker
 
 build:
 
-`docker build -t sust-api .`
+`docker build -t flask_mean_median .`
 
 get images:
 
@@ -29,13 +34,13 @@ get images:
 
 run:
 
-`docker run -d -p 5000:5000 --name python-restapi sust-api`
+`docker run -d -p 5000:5000 --name flask-mean-median flask_mean_median`
 
 ### Testing
 
 pytest:
 
-`pytest test_sust_app.py`
+`pytest flask_mean_median/test_api.py`
 
 Docker:
 
